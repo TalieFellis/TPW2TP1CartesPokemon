@@ -4,14 +4,15 @@ import CardTitle from "./components/card-title/CardTitle";
 import CardBody from "./components/card-body/CardBody";
 
 function App() {
-  return (
-    <section className="app">
-      <Card />
-      <Image />
-      <CardTitle />
-      <CardBody />
-    </section>
-    );
-  };
 
-export default App
+  return (
+  <section className="app">
+    <Card />
+    <Image />
+    <CardTitle />
+    <CardBody />
+  </section>
+  );
+};
+
+export default App;
