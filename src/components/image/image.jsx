@@ -5,10 +5,10 @@ const Image = () => {
     return (
         <img 
             className="Image"
-            src="./components/assets/pokemonPikachu.png" 
+            src="src\assets\pokemonPikachu.png" 
             loading="lazy" 
-            width="600" 
-            height="400" 
+            width="250" 
+            height="250" 
         />
     );
 };

@@ -10,7 +10,10 @@ html {
 
 .app {
   display: grid;
+  margin: 0;
+  grid-gap: 5px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   place-items: center;
-  background-color: #0D192B;
+  background-color: #f0fefb;
   min-height: 100vh;
 }
