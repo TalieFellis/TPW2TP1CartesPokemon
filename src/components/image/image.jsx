@@ -5,7 +5,7 @@ const Image = () => {
     return (
         <img 
             className="Image"
-            src="../components/assets/pokemonPikachu.png" 
+            src="./components/assets/pokemonPikachu.png" 
             loading="lazy" 
             width="600" 
             height="400" 
