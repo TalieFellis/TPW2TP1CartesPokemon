@@ -8,9 +8,9 @@ function App() {
   return (
     <section className="app">
       <Card />
-      <Image />
-      <CardTitle />
-      <AccordionsWithUseEffect />
+      <Card />
+      <Card />
+      <Card />
     </section>
   );
 }

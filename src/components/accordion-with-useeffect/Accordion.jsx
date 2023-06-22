@@ -1,22 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import "./Accordion.css";
 
 const AccordionWithUseEffect = (props) => {
-  const [name, setName] = useState("");
-
-  const getName = async () => {
-    try {
-      const url = `https://swapi.dev/api/people/${props.value}`;
-      const response = await fetch(url);
-      if (!response.ok) {
-        throw new Error(response.statusText);
-      }
-      const data = await response.json();
-      setName(data.name);
-    } catch (error) {
-      console.error(error.message);
-    }
-  };
 
   const classnames = ["accordion"];
 
@@ -24,22 +9,29 @@ const AccordionWithUseEffect = (props) => {
     classnames.push("active");
   }
 
-  const onClick = () => {
-    props.onClick(props.value);
+  const onMouseEnter = () => {
+    props.onMouseEnter(props.value);
+  };
+
+  const onMouseLeave = () => {
+    props.onMouseLeave();
   };
 
   useEffect(() => {
-    if (props.active === props.value) {
-      getName();
-    } else {
-      setName("");
-    }
+    // Supprimer la référence à getName ici
   }, [props.active]);
 
   return (
-    <div onClick={onClick} className={classnames.join(" ")}>
-      <button onClick={onClick} className="accordion__button">
-        {props.title} - {name}
+    <div
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
+      className={classnames.join(" ")}
+    >
+      <button
+        onMouseEnter={onMouseEnter}
+        className="accordion__button"
+      >
+        {props.title}
       </button>
       <div className="accordion__content">{props.children}</div>
     </div>

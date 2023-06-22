@@ -7,12 +7,12 @@ const NO_ACCORDION_SELECTED = 0;
 const AccordionsWithUseEffect = () => {
   const [active, setActive] = useState(NO_ACCORDION_SELECTED);
 
-  const handleClick = (index) => {
-    if (index === active) {
-      setActive(NO_ACCORDION_SELECTED);
-      return;
-    }
+  const onMouseEnter = (index) => {
     setActive(index);
+  };
+
+  const onMouseLeave = () => {
+    setActive(NO_ACCORDION_SELECTED);
   };
 
   const handleOutsideClick = (event) => {
@@ -31,15 +31,16 @@ const AccordionsWithUseEffect = () => {
   }, []);
 
   return (
-    <div className="accordions">
+    <div className="accordions" >
       <AccordionWithUseEffect
         value={1}
         active={active}
-        onClick={handleClick}
-        title="Accordion 1"
+        onMouseEnter={onMouseEnter}
+        onMouseLeave={onMouseLeave}
       >
-        Habilités 1 et 2
+        Shed Skin
       </AccordionWithUseEffect>
+      
     </div>
   );
 };
