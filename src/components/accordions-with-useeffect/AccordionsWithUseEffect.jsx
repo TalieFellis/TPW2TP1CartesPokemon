@@ -40,38 +40,6 @@ const AccordionsWithUseEffect = () => {
       >
         Habilités 1 et 2
       </AccordionWithUseEffect>
-      <AccordionWithUseEffect
-        value={2}
-        active={active}
-        onClick={handleClick}
-        title="Accordion 2"
-      >
-        Habilités 1 et 2
-      </AccordionWithUseEffect>
-      <AccordionWithUseEffect
-        value={3}
-        active={active}
-        onClick={handleClick}
-        title="Accordion 3"
-      >
-        Habilités 1 et 2
-      </AccordionWithUseEffect>
-      <AccordionWithUseEffect
-        value={4}
-        active={active}
-        onClick={handleClick}
-        title="Accordion 4"
-      >
-        Habilités 1 et 2
-      </AccordionWithUseEffect>
-      <AccordionWithUseEffect
-        value={5}
-        active={active}
-        onClick={handleClick}
-        title="Accordion 5"
-      >
-        Habilités 1 et 2
-      </AccordionWithUseEffect>
     </div>
   );
 };

@@ -10,11 +10,7 @@ function App() {
       <Card />
       <Image />
       <CardTitle />
-      <Container fluid className="my-5">
-        <Container>
-          <AccordionsWithUseEffect />
-        </Container>
-      </Container>
+      <AccordionsWithUseEffect />
     </section>
   );
 }
