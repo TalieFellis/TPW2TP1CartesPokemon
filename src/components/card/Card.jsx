@@ -2,7 +2,6 @@ import { useState } from 'react'
 import "./Card.css";
 import Image from '../image/Image';
 import CardTitle from '../card-title/CardTitle';
-import Abilities from '../abilities/Abilities';
 
 const Card = (props) => {
   const { image, name, abilities } = props.data;
