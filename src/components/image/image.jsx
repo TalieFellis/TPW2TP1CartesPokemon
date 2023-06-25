@@ -1,14 +1,15 @@
 import React from 'react';
 import "./Image.css"
 
-const Image = () => {
+const Image = (props) => {
     return (
         <img 
             className="Image"
-            src="src\assets\pokemonPikachu.png" 
+            src={props.src}
             loading="lazy" 
             width="250" 
             height="250" 
+            alt="Pokemon"
         />
     );
 };

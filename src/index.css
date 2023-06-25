@@ -6,14 +6,35 @@
 
 html {
   font-size: 62.5%;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .app {
   display: grid;
-  margin: 0;
-  grid-gap: 5px;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  margin: 2% 0;
+  grid-gap: 1%;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   place-items: center;
   background-color: #f0fefb;
   min-height: 100vh;
+  cursor: pointer;
+}
+
+@media (max-width: 1179px) {
+  .app {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 889px) {
+  .app {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 599px) {
+  .app {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
 }
