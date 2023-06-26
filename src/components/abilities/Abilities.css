@@ -11,8 +11,8 @@
 }
 
 .abilities-container.visible {
-    background-color: #cfe2d9;
-    color: #370c01;
+    background-color: rgb(207,226,217,0.75);
+    color: #1d3027;
     padding: 6px 12px;
     border-radius: 4px;
     max-height: 200px;
