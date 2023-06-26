@@ -1,0 +1,10 @@
+.card {
+    width: 29em;
+    height: 37em;
+    position: relative;
+    background: #049b78;
+    background: linear-gradient(to bottom, #049b78, #036b4d);
+    border-radius: 25px;
+    padding: 2em;
+    box-shadow: 0 3px 6px rgba(1, 25, 19, 0.16), 0 3px 6px rgba(13, 0, 0, 0.23);
+}

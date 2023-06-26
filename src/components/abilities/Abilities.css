@@ -1,0 +1,26 @@
+.abilities-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: flex-end;
+    margin-top: 3%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.abilities-container.visible {
+    background-color: #cfe2d9;
+    color: #370c01;
+    padding: 6px 12px;
+    border-radius: 4px;
+    max-height: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    transition: max-height 0.3s ease;
+}
+
+.abilities-container.hidden {
+    display: none;
+}
