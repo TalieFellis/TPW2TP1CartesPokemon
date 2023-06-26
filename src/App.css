@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-#root {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-=======
 .app {
   display: grid;
   margin: 2% 0;
@@ -14,7 +7,6 @@
   background-color: #f0fefb;
   min-height: 100vh;
   cursor: pointer;
->>>>>>> 29894aade6d41c1ac98d5c588b0824f86aab1262
 }
 
 @media (max-width: 768px) {
