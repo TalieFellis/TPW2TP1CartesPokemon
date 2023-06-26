@@ -19,3 +19,7 @@
     font-size: 18px;
     transition: max-height 0.3s ease;
 }
+
+.abilities-container.hidden {
+    display: none;
+}
